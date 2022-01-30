@@ -28,6 +28,20 @@
 <body itemscope itemtype="http://schema.org/WebPage">
 
 <section>
+  <div class="row">
+    <header class="leftcolumn">
+  	<h2 class="sp"></h2>
+    </header>
+    <div class="column">
+        <!--<img src="{{url_for('static', filename='images/Profile.jpg', width=400, height=300, quality=95)}}" />-->
+        <img src="{{ url_for('static', filename='images/Profile.jpg') }}",
+          width='240', height='350'>
+      <!--  resized_url = resize(original_image_url, '600x400') -->
+    </div>
+  </div>
+</section>
+
+<section>
 <div class="row">
   <div class="leftcolumn">
   </div>
@@ -207,13 +221,33 @@
 </div>
 </section> -->
 
+<section>
 <div class="row">
-  <div class="leftcolumn">
+  <header class="leftcolumn">
+	<h2 class="socialMedia">social media</h2>
+  </header>
+  <div class="column">
+      <ul class="gs">
+          <!-- <li><span class="black"><a href="NBIF_Justin.pdf">Curriculum vitae</a> (pdf)</span></li> -->
+          <li><a href="https://www.linkedin.com/in/justin-desrosier/">Linkedin</a></li>
+      </ul>
   </div>
+</div>
+</section>
+
+<section>
+<div class="row">
+  <header class="leftcolumn">
+    <h2 class="footer"> </h2>
+  </header>
   <footer class="column">
+    <ul class="ds">
       Page last modified 2022.01.30. Ref; <a href="https://www.economics.utoronto.ca/osborne/">Martin J. Osborne</a>, 2021.
+    </ul>
   </footer>
 </div>
+</section>
+
 
 </body>
 

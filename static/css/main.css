@@ -140,6 +140,20 @@ ul.gs {
 	margin: 0em 0em 0.5em -1em;
 }
 
+ul.ds {
+	list-style-type:square;
+/*	padding: 0em 0em 0em 1.5em;*/
+/*	margin: 0em 0em 0em 0em;*/
+	margin: 0em 0em 0.5em -2em;
+}
+
+ul.sp {
+	list-style-type:square;
+/*	padding: 0em 0em 0em 1.5em;*/
+/*	margin: 0em 0em 0em 0em;*/
+	margin: 0em 0em -0.5em 0em;
+}
+
 ul.gs li {
 	color:#BBBBBB;
 }
@@ -197,6 +211,14 @@ h2.teaching {
 }
 
 h2.resume {
+	color:#3366ff;
+}
+
+h2.socialMedia {
+	color:#3366ff;
+}
+
+h2.footer {
 	color:#3366ff;
 }
 
