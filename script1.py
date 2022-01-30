@@ -6,13 +6,13 @@ app=Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/contactInfo")
+def contactInfo():
+    return render_template("contactInfo.html")
 
-@app.route("/osbornesample")
-def osbornesample():
-    return render_template("osbornesample.html")
+@app.route("/CV")
+def CV():
+    return render_template("cv.html")
 
 if __name__=="__main__":
     app.run(debug=True)

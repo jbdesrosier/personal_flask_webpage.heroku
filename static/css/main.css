@@ -1,90 +1,436 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #060;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height:150%;
+	font-size:1em;
 }
 
-/*
-* Formatting the header area
-*/
-
-header {
-  background-color: #DF8887;
-  height: 35px;
-  width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
+h4 {
+	margin: 1em 0 0.5em 0;
 }
 
-header h1.logo {
-  margin: 0;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  float: left;
+.row {
+    display: flex; /* makes background color extend to bottom of cell */
+	display: -webkit-flex;
 }
 
-header h1.logo:hover {
-  color: #fff;
-  text-direction: none;
+.leftcolumn {
+    width: 120px;
+	background-color:#bbbbbb;
+	margin:0em 0em 0em 0em; /* margin-bottom should be same as margin-bottom for .column */
+	padding-right:0.4em;
+	text-align:right;
 }
 
-/*
-* center the body content
-*/
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
+.column {
+	margin:0em 0em 0em 0.5em; /* margin-bottom should be same as margin-bottom for .leftcolumn */
+    width: 680px;
+	margin-left: 0.4em;
 }
 
-div.home {
-  padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+p.first {
+	margin-top:0em;
 }
 
-div.about {
-  padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+footer {
+	font-size:0.8em;
+	font-style:italic;
+	line-height:150%;
+}
+
+span.abstract {
+   color:#ff9900;
+   position: relative;
+}
+
+span.abstract:hover {
+	cursor:pointer;
+}
+
+span.abstract span {
+	display: none;
+}
+
+span.abstract:hover span {
+   display: block;
+   position: absolute;
+   width: 640px;
+   border-radius: 5px;
+   background-color: #FFFFCC;
+   color:#000000;
+   border-style:solid;
+   border-width: 1px;
+   padding: 4px;
+   z-index:100;
+}
+
+div.note {
+   color:#ff9900;
+   position: relative;
+   display:inline;
+}
+
+div.note:hover {
+	cursor:pointer;
+}
+
+div.note div {
+	display: none;
+}
+
+div.note:hover div {
+   font-family: Verdana, Arial, Helvetica, sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
+   font-size: 0.7em;
+   display: block;
+   position: absolute;
+   width: 640px;
+   border-radius: 5px;
+   background-color: #FFFFCC;
+   color:#000000;
+   border-style:solid;
+   border-width: 1px;
+   padding: 4px;
+   z-index:100;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+div.equation {
+   margin-left:4em;
+   margin-right:4em;
+}
+
+code {
+   font-size:1.3em;
+   color:#886600;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #ff9900;
+}
+
+a:visited {
+	color: #ff0000;
+}
+
+a:hover {
+	color: #cc0000;
+	background: #ffcc99;
+}
+
+a.plain:link {
+	color:inherit;
+}
+
+a.plain:visited {
+	color:inherit;
+}
+
+/* For use in sections that consist only of itemizations */
+ul.gs {
+	list-style-type:square;
+/*	padding: 0em 0em 0em 1.5em;*/
+/*	margin: 0em 0em 0em 0em;*/
+	margin: 0em 0em 0.5em -1em;
+}
+
+ul.gs li {
+	color:#BBBBBB;
+}
+
+/* For use in text */
+ul.gstext {
+	list-style-type:square;
+}
+
+ul.gstext li {
+	color:#BBBBBB;
+}
+
+h1 {
+	color: #ff0000;
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-size:1.5em;
+	margin:0em 0em 0.5em 0em;
+	line-height: 120%;
+}
+
+h1 a:link {
+	color: inherit;
+}
+
+h1 a:visited {
+	color: inherit;
 }
 
 h2 {
-  font-size: 3em;
-  margin-top: 40px;
-  text-align: center;
-  letter-spacing: -2px;
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	padding:0em;
+	margin:0em;
+	font-size:1.1em;
 }
 
-h3 {
-  font-size: 1.7em;
-  font-weight: 100;
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing: -1px;
-  color: #999;
+h2.search {
+	color:#ffee11;
 }
 
-.menu {
-  float: right;
-  margin-top: 8px;
+h2.research {
+	color:#009933;
 }
 
-.menu li {
-  display: inline;
+h2.books {
+	color:#0000ff;
 }
 
-.menu li + li {
-  margin-left: 35px;
+h2.tutorials {
+	color:#993399;
 }
 
-.menu li a {
-  color: #444;
+h2.teaching {
+	color:#cc4400;
+}
+
+h2.resume {
+	color:#3366ff;
+}
+
+h2.latex {
+	color:#996600;
+}
+
+h2.contact {
+	color:#3366ff;
+}
+
+h2.etc {
+	color:#cc6600;
+}
+
+h2.gt {
+	color:#880000;
+}
+
+h2.generic {
+	color: #ff0000;
+}
+
+.black {
+	color:#000000;
+}
+
+.leftTitle {
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	padding:0em;
+	margin:0em;
+	font-size:1.1em;
+	color:#bbbbbb;
+	font-weight:bold;
+}
+
+.leftTitleResearch {
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	padding:0em;
+	margin:0em;
+	font-size:1.1em;
+	color:#009933;
+	font-weight:bold;
+}
+
+.scriptsize {
+	font-size: 70%;
+}
+
+div.result {
+	background-color: #ccffcc;
+	padding:0em 0em 0em 0.3em;
+}
+
+div.proof {
+	background-color: #dddddd;
+	padding:0em 0em 0em 0.3em;
+}
+
+div.definition {
+	background-color: #ffcccc;
+}
+
+div.example {
+	background-color: #ccffff;
+}
+
+div.exercise {
+	background-color: #ffcc99;
+}
+
+div.procedure {
+	background-color: #ccccff;
+}
+
+dl.definition {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.definition dt {
+	color: #FF0000;
+}
+
+dl.example {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.example dt {
+	color: #000099;
+}
+
+dl.result {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.result dt {
+	color: #006600;
+}
+
+dl.exercise {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.exercise dt {
+	color: #CC6600;
+}
+
+dl.proof {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.proof dt {
+	color: #000000;
+}
+
+dl.procedure {
+	margin: 0em 0em 0em 0em;
+}
+
+dl.procedure dt {
+	color: #660099;
+}
+
+span.highlight {
+	background-color: #ffff33;
+}
+
+dl.bold dt {
+	font-weight: bold;
+	/*padding-top: 0.5em;*/
+}
+
+dl.boldSpaced dt.first {
+	font-weight: bold;
+	padding-top: 0em;
+}
+
+dl.boldSpaced dt {
+	font-weight: bold;
+	padding-top: 0.75em;
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  line-height:140%;
+	  font-size:1em;
+  }
+  .row {
+      display: block;
+  }
+  .leftcolumn {
+   	  background-color:#ffffff;
+  	  padding:0em 0em 0.3em 0em;
+	  text-align:left;
+	  width:100%;
+  }
+  .column {
+      width: 100%;
+	  margin-left: 0em;
+	  padding:0em 0em 0.3em 0em;
+  }
+  span.abstract:hover span {
+	  width:90%;
+	  top:0px;
+	  left:0px;
+  }
+
+  div.note:hover div {
+   font-family: Verdana, Arial, Helvetica, sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
+   font-size: 0.7em;
+   display: block;
+   position: absolute;
+   width: 100%;
+   border-radius: 5px;
+   background-color: #FFFFCC;
+   color:#000000;
+   border-style:solid;
+   border-width: 1px;
+   padding: 4px;
+   z-index:100;
+}
+
+  div.equation {
+	  margin-left:2em;
+	  margin-right:2em;
+  }
+  code {
+     font-size:1.1em;
+  }
+  /* For use in text */
+  ul.gstext {
+  	  padding: 0em 0em 0em 2em;
+  }
+  blockquote {
+  	  margin-left: 1.5em;
+  	  margin-right: 1.5em;
+  }
+  dl.bold dt {
+	  font-weight: bold;
+  }
+  dl.bold dd {
+      margin-left: 2em;
+  }
+}
+
+
+/*
+div.navigation {
+  clear: both;
+}
+
+.navigation .links {
+  text-align: right;
+  color: #CC4400;
+}
+
+div.navigation a:link {
   text-decoration: none;
+  color: #CC4400;
 }
+
+div.navigation a:visited {
+  text-decoration: none;
+  color: #CC4400;
+}
+
+div.navigation a:hover {
+  background: white;
+  color: #CC4400;
+}
+
+
+div.navigation a.inactive {
+  color: #FF6633;
+}
+*/
