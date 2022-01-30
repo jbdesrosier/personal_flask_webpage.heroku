@@ -1,14 +1,14 @@
 from flask import Flask, render_template, send_from_directory, url_for
 #, resized_img_src
 import os
-import flask_resize
+#import flask_resize
 
 app=Flask(__name__)
 
-app.config['RESIZE_URL'] = 'jbdesrosier.info/'
-app.config['RESIZE_ROOT'] = 'C:/Users/jbdes/Desktop/Flask/personal_site/'
+#app.config['RESIZE_URL'] = 'jbdesrosier.info/'
+#app.config['RESIZE_ROOT'] = 'C:/Users/jbdes/Desktop/Flask/personal_site/'
 
-resize = flask_resize.Resize(app)
+#resize = flask_resize.Resize(app)
 
 #app.secret_key='giraffe'
 #images=Images(app)
