@@ -28,5 +28,37 @@ def CV():
 #    filepath = workingdir + '/static/cv/'
 #    return send_from_directory(filepath, "NBIF_Justin.pdf")
 
+@app.route("/writing1")
+def writing1():
+    return render_template("writing1.html")
+
+@app.route("/writing2")
+def writing2():
+    return render_template("writing2.html")
+
+@app.route("/writing3")
+def writing3():
+    return render_template("writing3.html")
+
+@app.route("/writing4")
+def writing4():
+    return render_template("writing4.html")
+
+@app.route("/writing5")
+def writing5():
+    return render_template("writing5.html")
+
+@app.route("/writing6")
+def writing6():
+    return render_template("writing6.html")
+
+@app.route("/writing7")
+def writing7():
+    return render_template("writing7.html")
+
+@app.route("/writing8")
+def writing8():
+    return render_template("writing8.html")
+
 if __name__=="__main__":
     app.run(debug=True)

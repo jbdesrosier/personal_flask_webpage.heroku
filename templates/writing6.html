@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="cv-container">
+
+    <!-- <iframe title="Bartosz_Kobylinski_CV" src="{{url_for('static', filename ='cv/bartosz_kobylinski_cv.pdf')}}&embedded=true" style="width: 95%; height: 55rem;" frameborder="0"></iframe> -->
+    <object data="{{ url_for('static', filename='writing/Sociology of Ethics Paper.pdf')}}" type="application/pdf" style="min-height:100vh;width:100%"></object>
+
+</div>
+
+{% endblock %}
