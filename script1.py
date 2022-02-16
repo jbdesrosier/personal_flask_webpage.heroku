@@ -21,6 +21,10 @@ def home():
 def contactInfo():
     return render_template("contactInfo.html")
 
+@app.route("/writing_samples")
+def writing_samples():
+    return render_template("writing_samples.html")
+
 @app.route("/CV")
 def CV():
     return render_template("cv.html")

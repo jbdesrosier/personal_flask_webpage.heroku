@@ -1,6 +1,12 @@
 
+@font-face {
+		font-family: 'Urbanist', sans-serif;
+		src: url('Urbanist.ttf');
+}
+
+
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Urbanist', sans-serif;
 	line-height:150%;
 	font-size:1em;
 }
@@ -79,7 +85,7 @@ div.note div {
 }
 
 div.note:hover div {
-   font-family: Verdana, Arial, Helvetica, sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
+   font-family: 'Urbanist', sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
    font-size: 0.7em;
    display: block;
    position: absolute;
@@ -169,7 +175,7 @@ ul.gstext li {
 
 h1 {
 	color: #3E3D53;
-	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-family: 'Urbanist', sans-serif;
 	font-size:1.5em;
 	margin:0em 0em 0.5em 0em;
 	line-height: 120%;
@@ -184,7 +190,7 @@ h1 a:visited {
 }
 
 h2 {
-	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-family: 'Urbanist', sans-serif;
 	padding:0em;
 	margin:0em;
 	font-size:1.1em;
@@ -247,7 +253,7 @@ h2.generic {
 }
 
 .leftTitle {
-	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-family: 'Urbanist', sans-serif;
 	padding:0em;
 	margin:0em;
 	font-size:1.1em;
@@ -256,7 +262,7 @@ h2.generic {
 }
 
 .leftTitleResearch {
-	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-family: 'Urbanist', sans-serif;
 	padding:0em;
 	margin:0em;
 	font-size:1.1em;
@@ -363,7 +369,7 @@ dl.boldSpaced dt {
 
 @media screen and (max-device-width: 480px) {
   body {
-	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  font-family: 'Urbanist', sans-serif;
 	  line-height:140%;
 	  font-size:1em;
   }
@@ -388,7 +394,7 @@ dl.boldSpaced dt {
   }
 
   div.note:hover div {
-   font-family: Verdana, Arial, Helvetica, sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
+   font-family: 'Urbanist', sans-serif; /* for the case it's inside a pre, as in BIBTEX.HTM */
    font-size: 0.7em;
    display: block;
    position: absolute;
