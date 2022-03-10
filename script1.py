@@ -25,6 +25,10 @@ def contactInfo():
 def writing_samples():
     return render_template("writing_samples.html")
 
+@app.route("/research")
+def research():
+    return render_template("research.html")
+
 @app.route("/CV")
 def CV():
     return render_template("cv.html")
@@ -63,6 +67,10 @@ def writing7():
 @app.route("/writing8")
 def writing8():
     return render_template("writing8.html")
+
+@app.route("/research_detailed")
+def research_detailed():
+    return render_template("research_detailed.html")
 
 if __name__=="__main__":
     app.run(debug=True)

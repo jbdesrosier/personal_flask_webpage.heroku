@@ -1,0 +1,103 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<head>
+<meta charset="utf-8" />
+<title>Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel=stylesheet type="text/css" href="home.css"> -->
+<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+<meta name="keywords" content="Justin Desrosier">
+<meta name="description"content="Justin Desrosier's research">
+<meta name="abstract" content="Justin Desrosier's research">
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39636509-1', 'auto');
+  ga('send', 'pageview');
+
+</script> -->
+
+</head>
+
+<body>
+
+<section>
+<div class="row">
+  <div class="leftcolumn">
+  </div>
+  <div class="column">
+  	<header>
+	<h1>M.A. Research <i>on-going</i></h1>
+    </header>
+  </div>
+</div>
+</section>
+
+<!-- <section>
+<div class="row">
+  <header class="leftcolumn">
+	<h2 class="contact">postal</h2>
+  </header>
+  <div class="column">
+	  <a href="index.html">Martin J. Osborne</a>, <a href="http://www.economics.utoronto.ca/">Department of Economics</a>, 150 St. George Street, <a href="http://www.utoronto.ca/">University of Toronto</a>, Toronto, Canada, M5S 3G7
+  </div>
+</div>
+</section> -->
+
+<section>
+<div class="row">
+  <header class="leftcolumn">
+	<h2 class="contact">project</h2>
+  </header>
+  <div class="column">
+    <ul class="gs">
+        <!-- <li><span class="black"><a href="NBIF_Justin.pdf">Curriculum vitae</a> (pdf)</span></li> -->
+        Asymmetry in Labour Dynamics between Canadian-born and Immigrant Groups
+    </ul>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="row">
+  <header class="leftcolumn">
+	<h2 class="contact">abstract</h2>
+  </header>
+  <div class="column">
+    <ul class="gs">
+        <!-- <li><span class="black"><a href="NBIF_Justin.pdf">Curriculum vitae</a> (pdf)</span></li> -->
+        This study investigates the asymmetry in employment and wage rate convergence between Canadian-born and immigrant groups. We utilize the Longitudinal Immigration Database (IMDB), the Longitudinal administrative Database (LAD), the Labour Force Survey (LFS), and the Census from 1986 to 2016 to conduct descriptive and regression analysis to identify the determinants of any disparity in wage convergence. Our methodology involves comparing the income of immigrant cohorts with the native-born for the years of the quintennial Census. Using Principal Component Analysis (PCA), we identify the factors that explain the asymmetry in wage convergence across different groups. Controlling socio-economic factors, e.g., educational attainment, occupational experience, language ability and other demographic factors, we observe the presence of disparity in economic integration for different groups under identical labour market conditions. Moreover, we extend our analysis to examine whether there is an asymmetry in convergence across immigrants based on gender and region. Using the Blinder-Oaxaca wage decomposition framework, our findings ascertain whether the wage differences can be explained with different characteristics of immigrants or whether unexplained characteristics exist, providing insight on skill transferability and a measure of wage discrimination. Female immigrants from the Middle East and North Africa have the slowest convergence rate compared to the other groups. Our findings shed light on devising policies to eliminate the disparity in economic integration for different immigrant groups.
+    </ul>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="row">
+  <header class="leftcolumn">
+	<h2 class="contact">methods</h2>
+  </header>
+  <div class="column">
+    <ul class="gs">
+        <!-- <li><span class="black"><a href="NBIF_Justin.pdf">Curriculum vitae</a> (pdf)</span></li> -->
+        <li><a href="{{ url_for('research_detailed') }}">Extended Overview</a></li>
+  </div>
+</div>
+</section>
+
+
+<div class="row">
+  <div class="leftcolumn">
+  </div>
+  <footer class="column">
+      Page last modified 2022.03.09.
+  </footer>
+</div>
+
+</body>
+{%endblock%}
